@@ -1,1 +1,171 @@
-/* Denna fil skall innehålla din CSS kod */
+#layout {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 150px 250px 75px 75px 75px 50px;
+    grid-gap: 10px;
+    grid-template-areas:
+    'hd'
+    'as'
+    'mn'
+    'nv'
+    'nv2' 
+    'nv3'
+    'ft';
+}
+
+/* @media only screen and (max-width: 600px) {
+    #layout {
+        display: grid;
+        grid-template:
+        'hd hd hd hd'
+        'nv nv nv nv'
+        'as mn mn as2'
+        'ft ft ft ft';
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+    asidetva {
+        grid-area: as2;
+        display: block;
+        background: orangered;
+    }
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('/img/Blue261.gif');
+}
+
+header {
+    grid-area: hd;
+    display: block;
+    background: rgba(255, 255, 255, 0.438);
+    margin: auto;
+    border-radius: 20px;
+}
+
+nav {
+    grid-area: nv;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav2 {
+    grid-area: nv2;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav3 {
+    grid-area: nv3;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    grid-area: mn;
+    display: block;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    margin: auto;
+}
+
+aside {
+    grid-area: as;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+footer {
+    grid-area: ft;
+    display: block;
+    background: rgba(255, 255, 255, 0.438);
+    border-radius: 50px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rubrik {
+    color: yellow;
+}
+
+#knapp1 {
+    text-align: center;
+    display: block;
+    margin: 25px;
+}
+
+#knapp2 {
+    text-align: center;
+    display: block;
+    margin: 25px;
+}
+
+#knapp3 {
+    text-align: center;
+    display: block;
+    margin: 25px;
+}
+
+#info {
+    text-align: left;
+    right: 25px;
+    margin: 10px;
+    display: block;
+}
+
+#bild {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#logga {
+    width: 25px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+
+#hemlig {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 44px;
+}
+
+#hemlig2 {
+    display: block;
+    text-align: center;
+    margin: 25px;
+    font-size: 22px;
+}
+
+#hemliglänk {
+    display: block;
+    text-align: center;
+    margin: 25px;
+    font-size: 22px;
+    font-style: bold;
+}
